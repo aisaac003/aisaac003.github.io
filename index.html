@@ -779,7 +779,8 @@
       background: rgba(16, 26, 54, 0.68);
     }
 
-    .media-tile img {
+    .media-tile img,
+    .media-tile video {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
@@ -789,6 +790,11 @@
     .media-tile img.fit-contain {
       object-fit: contain;
       padding: 8px;
+    }
+
+    .media-tile video {
+      border: 0;
+      border-radius: 0;
     }
 
     .media-tile figcaption {
@@ -1334,6 +1340,12 @@
           <figure class="media-tile">
             <img class="fit-contain" src="img/p04_img_08.png" data-full-src="img/p04_img_09.png" alt="Cuerpo completo de las vértebras con disco intervertebral fabricado">
             <figcaption>Cuerpo completo de las vértebras con el disco intervertebral fabricado.</figcaption>
+          </figure>
+          <figure class="media-tile">
+            <video controls preload="metadata">
+              <source src="videos/p04_vid_01.mp4" type="video/mp4">
+            </video>
+            <figcaption>Ensayo de compresión que ilustra la respuesta viscoelástica del disco intervertebral biomimético frente a una carga mecánica controlada.</figcaption>
           </figure>
         </div>
         <p class="modal-desc"><strong>Rol del proyecto:</strong> generación de metamateriales con autómatas celulares, realización de ensayos mecánicos para caracterización de metamateriales generados e incorporación de metamateriales al diseño y fabricación de un disco intervertebral personalizado.</p>
