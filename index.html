@@ -1036,16 +1036,16 @@
 
         <div class="filter-row" role="tablist" aria-label="Filtro de proyectos">
           <button class="filter-btn active" data-filter="all">Todos</button>
-          <button class="filter-btn" data-filter="tpms">Optimización Topológica</button>
-          <button class="filter-btn" data-filter="bio">Gemelos Biofísicos</button>
-          <button class="filter-btn" data-filter="applied">Investigación Aplicada</button>
+          <button class="filter-btn" data-filter="g01">Optimización Topológica</button>
+          <button class="filter-btn" data-filter="g02">Gemelos Biofísicos</button>
+          <button class="filter-btn" data-filter="g03">Investigación Aplicada</button>
         </div>
 
         <div class="projects-grid" id="projectsGrid">
-          <article class="project-card featured" data-category="tpms">
+          <article class="project-card featured" data-category="g01">
             <div class="card-media">
-              <img src="img/femca_fischer_frame.png" alt="Estructura microcelular Fischer voxelizada">
-              <button class="card-play-btn" onclick="openModal('modal-tpms')">Ver simulación</button>
+              <img src="img/p01_img_01.png" alt="Estructura microcelular Fischer voxelizada">
+              <button class="card-play-btn" onclick="openModal('modal-p01')">Ver simulación</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Optimización Topológica</div>
@@ -1055,12 +1055,12 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="bio">
+          <article class="project-card" data-category="g02">
             <div class="card-media">
-              <video autoplay muted loop playsinline preload="metadata" poster="img/icells_scaffold_simulation_a_poster.jpg" aria-label="Referencia de simulación mecanobiológica en andamio voxelizado">
-                <source src="videos/icells_scaffold_simulation_a.mp4" type="video/mp4">
+              <video autoplay muted loop playsinline preload="metadata" poster="img/p02_img_04.jpg" aria-label="Referencia de simulación mecanobiológica en andamio voxelizado">
+                <source src="videos/p02_vid_01.mp4" type="video/mp4">
               </video>
-              <button class="card-play-btn" onclick="openModal('modal-scaffold')">Ver modal</button>
+              <button class="card-play-btn" onclick="openModal('modal-p02')">Ver modal</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Gemelo Digital Biofísico</div>
@@ -1070,10 +1070,10 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="applied">
+          <article class="project-card" data-category="g03">
             <div class="card-media">
-              <img src="img/ca_disc_final_section.png" alt="Vista de corte de disco intervertebral fabricado con arquitectura metamaterial">
-              <button class="card-play-btn" onclick="openModal('modal-ca-disc')">Ver galería</button>
+              <img src="img/p04_img_10.png" alt="Vista de corte de disco intervertebral fabricado con arquitectura metamaterial">
+              <button class="card-play-btn" onclick="openModal('modal-p04')">Ver galería</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Metamateriales y Dispositivos Personalizados</div>
@@ -1083,12 +1083,12 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="bio">
+          <article class="project-card" data-category="g02">
             <div class="card-media">
-              <video autoplay muted loop playsinline preload="metadata" poster="img/icells_microfluidics_fields.png" aria-label="Referencia de simulación microfluídica y flujo celular">
-                <source src="videos/icells_microdevice_cells.mp4" type="video/mp4">
+              <video autoplay muted loop playsinline preload="metadata" poster="img/p03_img_01.png" aria-label="Referencia de simulación microfluídica y flujo celular">
+                <source src="videos/p03_vid_02.mp4" type="video/mp4">
               </video>
-              <button class="card-play-btn" onclick="openModal('modal-micro')">Ver modal</button>
+              <button class="card-play-btn" onclick="openModal('modal-p03')">Ver modal</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Microfluídica Computacional</div>
@@ -1098,10 +1098,10 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="applied">
+          <article class="project-card" data-category="g03">
             <div class="card-media">
-              <img src="img/exo_rehab_design.png" alt="Diseño de exoesqueleto de rehabilitación de miembro superior">
-              <button class="card-play-btn" onclick="openModal('modal-rehab')">Ver galería</button>
+              <img src="img/p05_img_01.png" alt="Diseño de exoesqueleto de rehabilitación de miembro superior">
+              <button class="card-play-btn" onclick="openModal('modal-p05')">Ver galería</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Rehabilitación y Prototipado Funcional</div>
@@ -1111,10 +1111,10 @@
             </div>
           </article>
 
-          <article class="project-card" data-category="applied">
+          <article class="project-card" data-category="g03">
             <div class="card-media">
-              <img src="img/pelvis_slicer3d.png" alt="Reconstrucción anatómica para planificación quirúrgica">
-              <button class="card-play-btn" onclick="openModal('modal-anatomical')">Ver galería</button>
+              <img src="img/p06_img_01.png" alt="Reconstrucción anatómica para planificación quirúrgica">
+              <button class="card-play-btn" onclick="openModal('modal-p06')">Ver galería</button>
             </div>
             <div class="card-body">
               <div class="card-cat">Reconstrucción Anatómica</div>
@@ -1245,38 +1245,38 @@
     © 2026 Isaac Castillo Merino. Portafolio académico.
   </footer>
 
-  <div class="modal-backdrop" id="modal-tpms" role="dialog" aria-modal="true" aria-labelledby="modal-tpms-title">
+  <div class="modal-backdrop" id="modal-p01" role="dialog" aria-modal="true" aria-labelledby="modal-p01-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-tpms-title">Optimización Topológica - TPMS Fischer</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-tpms')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p01-title">Optimización Topológica - TPMS Fischer</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p01')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
-        <video controls poster="img/femca_optimized_strain.png">
-          <source src="videos/femca_optimized_von_mises.mp4" type="video/mp4">
+        <video controls poster="img/p01_img_03.png">
+          <source src="videos/p01_vid_03.mp4" type="video/mp4">
         </video>
         <p class="modal-desc"><strong>Enfoque del proyecto:</strong> exploración de cómo una microestructura TPMS tipo Fischer puede adaptarse a distintas condiciones de diseño, combinando criterios de comportamiento estructural, continuidad geométrica y potencial de fabricación para estudiar arquitecturas más inteligentes y funcionales.</p>
       </div>
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-scaffold" role="dialog" aria-modal="true" aria-labelledby="modal-scaffold-title">
+  <div class="modal-backdrop" id="modal-p02" role="dialog" aria-modal="true" aria-labelledby="modal-p02-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-scaffold-title">Gemelo Digital Biofísico - Andamios Voxelizados</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-scaffold')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p02-title">Gemelo Digital Biofísico - Andamios Voxelizados</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p02')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
         <div class="video-split" aria-label="Comparativa paralela de simulaciones en andamios voxelizados">
           <figure class="video-panel">
-            <video controls poster="img/icells_scaffold_simulation_a_poster.jpg">
-              <source src="videos/icells_scaffold_simulation_a.mp4" type="video/mp4">
+            <video controls poster="img/p02_img_04.jpg">
+              <source src="videos/p02_vid_01.mp4" type="video/mp4">
             </video>
             <figcaption>Referencia A: Evolución mecanobiológica interna sobre dominio voxelizado.</figcaption>
           </figure>
           <figure class="video-panel">
-            <video controls poster="img/icells_scaffold_simulation_b_poster.jpg">
-              <source src="videos/icells_scaffold_simulation_b.mp4" type="video/mp4">
+            <video controls poster="img/p02_img_05.jpg">
+              <source src="videos/p02_vid_02.mp4" type="video/mp4">
             </video>
             <figcaption>Referencia B: Evolución mecanobiológica externa sobre dominio voxelizado.</figcaption>
           </figure>
@@ -1287,52 +1287,52 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-micro" role="dialog" aria-modal="true" aria-labelledby="modal-micro-title">
+  <div class="modal-backdrop" id="modal-p03" role="dialog" aria-modal="true" aria-labelledby="modal-p03-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-micro-title">Gemelo Digital Biofísico - Sistemas Microfluídicos</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-micro')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p03-title">Gemelo Digital Biofísico - Sistemas Microfluídicos</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p03')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
-        <video controls poster="img/icells_microfluidics_fields.png">
-          <source src="videos/icells_microfluidics_results.mp4" type="video/mp4">
-          <source src="videos/icells_microdevice_cells.mp4" type="video/mp4">
+        <video controls poster="img/p03_img_01.png">
+          <source src="videos/p03_vid_01.mp4" type="video/mp4">
+          <source src="videos/p03_vid_02.mp4" type="video/mp4">
         </video>
         <p class="modal-desc"><strong>Enfoque del proyecto:</strong> análisis computacional de entornos microfluídicos donde el movimiento del fluido, el confinamiento geométrico y la presencia celular se combinan para estudiar escenarios cercanos a dispositivos microfisiológicos. La propuesta busca conectar comportamiento celular, transporte y condiciones locales de flujo en una lectura visual y comparable.</p>
       </div>
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-ca-disc" role="dialog" aria-modal="true" aria-labelledby="modal-ca-disc-title">
+  <div class="modal-backdrop" id="modal-p04" role="dialog" aria-modal="true" aria-labelledby="modal-p04-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-ca-disc-title">Metamateriales CA y Disco Intervertebral Personalizado</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-ca-disc')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p04-title">Metamateriales CA y Disco Intervertebral Personalizado</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p04')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
         <div class="media-gallery">
           <figure class="media-tile">
-            <img class="fit-contain" src="img/ca_metamaterials_flow.png" alt="Flujo completo de generación de metamateriales con autómatas celulares">
+            <img class="fit-contain" src="img/p04_img_01.png" alt="Flujo completo de generación de metamateriales con autómatas celulares">
             <figcaption>Flujo de generación geométrica y preparación experimental.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/ca_fischer_probes.png" alt="Probetas Fischer fabricadas">
+            <img src="img/p04_img_02.png" alt="Probetas Fischer fabricadas">
             <figcaption>Probetas basadas en celda Fischer y evolución por reglas CA.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/ca_gyroid_probes.png" alt="Probetas Gyroid fabricadas">
+            <img src="img/p04_img_03.png" alt="Probetas Gyroid fabricadas">
             <figcaption>Comparación visual con arquitectura Gyroid fabricada.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/ca_compression_instron_probe_focus.png" data-full-src="img/ca_compression_instron.png" alt="Máquina de ensayo con probeta metamaterial Fischer">
+            <img src="img/p04_img_04.png" data-full-src="img/p04_img_05.png" alt="Máquina de ensayo con probeta metamaterial Fischer">
             <figcaption>Máquina de ensayo y probeta metamaterial durante la lectura mecánica.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/ca_disc_results_deformation_curves.png" data-full-src="img/ca_disc_results.png" alt="Curvas de deformación en ensayos de compresión Fischer">
+            <img src="img/p04_img_06.png" data-full-src="img/p04_img_07.png" alt="Curvas de deformación en ensayos de compresión Fischer">
             <figcaption>Curvas de deformación y respuesta mecánica de probetas Fischer.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img class="fit-contain" src="img/ca_disc_final_fabricated_focus.png" data-full-src="img/ca_disc_final_full.png" alt="Cuerpo completo de las vértebras con disco intervertebral fabricado">
+            <img class="fit-contain" src="img/p04_img_08.png" data-full-src="img/p04_img_09.png" alt="Cuerpo completo de las vértebras con disco intervertebral fabricado">
             <figcaption>Cuerpo completo de las vértebras con el disco intervertebral fabricado.</figcaption>
           </figure>
         </div>
@@ -1341,20 +1341,20 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-rehab" role="dialog" aria-modal="true" aria-labelledby="modal-rehab-title">
+  <div class="modal-backdrop" id="modal-p05" role="dialog" aria-modal="true" aria-labelledby="modal-p05-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-rehab-title">Diseño y Evaluación de Sistema de Rehabilitación</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-rehab')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p05-title">Diseño y Evaluación de Sistema de Rehabilitación</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p05')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
         <div class="media-gallery">
           <figure class="media-tile">
-            <img src="img/exo_rehab_design.png" alt="Diseño de exoesqueleto de rehabilitación">
+            <img src="img/p05_img_01.png" alt="Diseño de exoesqueleto de rehabilitación">
             <figcaption>Diseño y evaluación de un sistema de rehabilitación de miembro superior.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/exo_rehab_flow.png" alt="Flujo de desarrollo de exoesqueleto de rehabilitación">
+            <img src="img/p05_img_02.png" alt="Flujo de desarrollo de exoesqueleto de rehabilitación">
             <figcaption>Flujo de desarrollo del dispositivo y preparación de componentes.</figcaption>
           </figure>
         </div>
@@ -1363,28 +1363,28 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-anatomical" role="dialog" aria-modal="true" aria-labelledby="modal-anatomical-title">
+  <div class="modal-backdrop" id="modal-p06" role="dialog" aria-modal="true" aria-labelledby="modal-p06-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-anatomical-title">Reconstrucción Anatómica para Planificación Quirúrgica</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-anatomical')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-p06-title">Reconstrucción Anatómica para Planificación Quirúrgica</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-p06')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
         <div class="media-gallery">
           <figure class="media-tile">
-            <img src="img/pelvis_slicer3d.png" alt="Segmentación pélvica en 3D Slicer">
+            <img src="img/p06_img_01.png" alt="Segmentación pélvica en 3D Slicer">
             <figcaption>Segmentación anatómica en 3D Slicer para reconstrucción médica.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/pelvis_meshmixer_print.png" alt="Preparación de impresión en MeshMixer">
+            <img src="img/p06_img_02.png" alt="Preparación de impresión en MeshMixer">
             <figcaption>Limpieza de malla y configuración de impresión.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/disc_segmentation_flow.png" alt="Flujo de segmentación y modelado de disco intervertebral">
+            <img src="img/p06_img_03.png" alt="Flujo de segmentación y modelado de disco intervertebral">
             <figcaption>Flujo de segmentación, modelado e impresión desde imagen médica.</figcaption>
           </figure>
           <figure class="media-tile">
-            <img src="img/disc_segmentation_result.png" alt="Resultado de disco intervertebral personalizado">
+            <img src="img/p06_img_04.png" alt="Resultado de disco intervertebral personalizado">
             <figcaption>Resultado geométrico de disco intervertebral personalizado.</figcaption>
           </figure>
         </div>
@@ -1393,14 +1393,14 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="modal-image-viewer" role="dialog" aria-modal="true" aria-labelledby="modal-image-title">
+  <div class="modal-backdrop" id="modal-viewer" role="dialog" aria-modal="true" aria-labelledby="modal-viewer-title">
     <div class="modal-box">
       <div class="modal-head">
-        <div class="modal-title" id="modal-image-title">Vista completa</div>
-        <button class="modal-close-btn" onclick="closeModal('modal-image-viewer')" aria-label="Cerrar">×</button>
+        <div class="modal-title" id="modal-viewer-title">Vista completa</div>
+        <button class="modal-close-btn" onclick="closeModal('modal-viewer')" aria-label="Cerrar">×</button>
       </div>
       <div class="modal-content">
-        <img id="modal-image-full" src="" alt="" style="width:100%; max-height:72vh; object-fit:contain; background:#071126; border:1px solid var(--line); border-radius:6px;">
+        <img id="modal-viewer-full" src="" alt="" style="width:100%; max-height:72vh; object-fit:contain; background:#071126; border:1px solid var(--line); border-radius:6px;">
       </div>
     </div>
   </div>
@@ -1456,13 +1456,13 @@
     }
 
     function openImageViewer(src, alt) {
-      const image = document.getElementById('modal-image-full');
-      const title = document.getElementById('modal-image-title');
+      const image = document.getElementById('modal-viewer-full');
+      const title = document.getElementById('modal-viewer-title');
       if (!image || !title) return;
       image.src = src;
       image.alt = alt || 'Imagen completa';
       title.textContent = alt || 'Vista completa';
-      openModal('modal-image-viewer');
+      openModal('modal-viewer');
     }
 
     document.querySelectorAll('.modal-backdrop').forEach(modal => {
