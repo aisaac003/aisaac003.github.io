@@ -1,0 +1,41 @@
+# Local automation and virtual environments
+environment/
+.venv/
+venv/
+env/
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+scripts/tmp/
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Unsupported source video containers retained locally after MP4 conversion
+videos/*.avi
+
+# Local source exports copied to normalized publication names
+img/Diseño*.png
+img/Generación*.png
+img/Reconstrucción*.png
+img/Segmentación*.png
+
+# Node or tooling artifacts, if preview tooling is added later
+node_modules/
+.cache/
+.parcel-cache/
+dist/
+build/
+
+# Local IDE settings
+.idea/
+.vscode/
