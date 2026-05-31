@@ -23,6 +23,8 @@ __pycache__/
 # Publication assets must use neutral coded names only
 img/*
 !img/
+!img/Logos/
+!img/Logos/*.webp
 !img/p*_img_*.png
 !img/p*_img_*.jpg
 !img/p*_img_*.jpeg

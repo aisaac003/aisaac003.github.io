@@ -85,17 +85,28 @@
     }
 
     body.canvas-muted #nav {
-      background: transparent;
-      backdrop-filter: none;
+      background: rgba(248, 249, 250, 0.96);
+      backdrop-filter: blur(6px);
     }
 
     body.canvas-muted #nav::before {
       content: "";
       position: absolute;
-      inset: 0;
+      inset: 0 auto 0 0;
+      width: var(--nav-voronoi-window, 0%);
       pointer-events: none;
-      background: linear-gradient(90deg, rgba(248, 249, 250, 0.02), rgba(248, 249, 250, 0.1));
+      background:
+        radial-gradient(circle at 20% 18%, rgba(0, 68, 204, 0.28) 0 2px, transparent 2.8px),
+        radial-gradient(circle at 68% 42%, rgba(0, 128, 128, 0.24) 0 2.2px, transparent 3px),
+        radial-gradient(circle at 38% 76%, rgba(0, 68, 204, 0.2) 0 1.7px, transparent 2.6px),
+        linear-gradient(32deg, transparent 0 31%, rgba(0, 68, 204, 0.18) 31.4% 31.9%, transparent 32.3%),
+        linear-gradient(136deg, transparent 0 42%, rgba(0, 128, 128, 0.13) 42.4% 42.9%, transparent 43.3%),
+        linear-gradient(74deg, transparent 0 54%, rgba(0, 68, 204, 0.12) 54.4% 54.9%, transparent 55.3%),
+        linear-gradient(90deg, rgba(248, 249, 250, 0.08), rgba(248, 249, 250, 0.34), rgba(248, 249, 250, 0.88));
+      background-size: 168px 142px, 192px 164px, 144px 152px, 190px 150px, 220px 180px, 180px 160px, 100% 100%;
+      background-position: 0 0, 22px 18px, 48px 10px, 0 0, 18px 12px, 40px 0, 0 0;
       z-index: 0;
+      transition: width 260ms linear;
     }
 
     .brand {
@@ -245,8 +256,8 @@
       }
 
       body.canvas-muted #nav {
-        background: transparent;
-        backdrop-filter: none;
+        background: rgba(248, 249, 250, 0.96);
+        backdrop-filter: blur(6px);
       }
 
       .brand {
@@ -1863,6 +1874,7 @@
       document.body.style.setProperty('--canvas-scale', (1 - eased * 0.04).toFixed(3));
       document.body.style.setProperty('--canvas-saturation', (1 + eased * 0.08).toFixed(3));
       document.body.style.setProperty('--canvas-contrast', (1 + eased * 0.08).toFixed(3));
+      document.body.style.setProperty('--nav-voronoi-window', `${(100 * eased).toFixed(1)}%`);
       document.body.style.setProperty(
         '--canvas-clip',
         `inset(0 ${(navClipRight * eased).toFixed(1)}px ${(navClipBottom * eased).toFixed(1)}px 0)`
